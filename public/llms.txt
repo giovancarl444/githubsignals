@@ -1,0 +1,8 @@
+# GitHub Signals
+
+> The daily scout for open-source projects worth your stars — one repo a day, plain-English pitch, straight from Hacker News to your inbox.
+
+## Pages
+
+- [Home](/): Subscribe to a daily curated GitHub repo signal picked from the front page of Hacker News.
+

@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* GitHub Signals — dark, developer-native, sunset-on-ocean accents */
+
+@layer base {
+  :root {
+    /* Core surfaces — deep near-black with subtle blue undertone */
+    --background: 220 25% 4%;
+    --foreground: 30 30% 96%;
+
+    --card: 220 22% 7%;
+    --card-foreground: 30 30% 96%;
+
+    --popover: 220 25% 5%;
+    --popover-foreground: 30 30% 96%;
+
+    /* Primary — sunset orange (mascot accent) */
+    --primary: 22 95% 58%;
+    --primary-foreground: 220 30% 6%;
+    --primary-glow: 32 100% 65%;
+
+    /* Secondary — ocean teal (mascot horizon) */
+    --secondary: 195 70% 45%;
+    --secondary-foreground: 220 30% 6%;
+
+    --muted: 220 18% 12%;
+    --muted-foreground: 220 10% 62%;
+
+    --accent: 32 100% 65%;
+    --accent-foreground: 220 30% 6%;
+
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 30 30% 96%;
+
+    --border: 220 18% 14%;
+    --input: 220 18% 12%;
+    --ring: 22 95% 58%;
+
+    --radius: 0.75rem;
+
+    /* Brand gradients */
+    --gradient-sunset: linear-gradient(135deg, hsl(22 95% 58%), hsl(32 100% 65%) 50%, hsl(355 85% 60%));
+    --gradient-ocean: linear-gradient(180deg, hsl(22 95% 58% / 0.15), hsl(195 70% 35% / 0.1) 60%, transparent);
+    --gradient-text: linear-gradient(135deg, hsl(32 100% 70%), hsl(22 95% 60%) 50%, hsl(195 80% 55%));
+
+    /* Glows */
+    --glow-primary: 0 0 80px hsl(22 95% 58% / 0.35);
+    --glow-soft: 0 20px 60px -20px hsl(22 95% 58% / 0.5);
+
+    --sidebar-background: 220 25% 4%;
+    --sidebar-foreground: 30 30% 96%;
+    --sidebar-primary: 22 95% 58%;
+    --sidebar-primary-foreground: 220 30% 6%;
+    --sidebar-accent: 220 18% 12%;
+    --sidebar-accent-foreground: 30 30% 96%;
+    --sidebar-border: 220 18% 14%;
+    --sidebar-ring: 22 95% 58%;
+  }
+
+  .dark {
+    /* Same as :root — this app is dark-mode only */
+    --background: 220 25% 4%;
+    --foreground: 30 30% 96%;
+    --card: 220 22% 7%;
+    --card-foreground: 30 30% 96%;
+    --popover: 220 25% 5%;
+    --popover-foreground: 30 30% 96%;
+    --primary: 22 95% 58%;
+    --primary-foreground: 220 30% 6%;
+    --secondary: 195 70% 45%;
+    --secondary-foreground: 220 30% 6%;
+    --muted: 220 18% 12%;
+    --muted-foreground: 220 10% 62%;
+    --accent: 32 100% 65%;
+    --accent-foreground: 220 30% 6%;
+    --destructive: 0 75% 55%;
+    --destructive-foreground: 30 30% 96%;
+    --border: 220 18% 14%;
+    --input: 220 18% 12%;
+    --ring: 22 95% 58%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    @apply dark;
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: "ss01", "cv11";
+    background-image:
+      radial-gradient(ellipse 80% 50% at 50% -10%, hsl(22 95% 58% / 0.18), transparent 70%),
+      radial-gradient(ellipse 60% 50% at 80% 110%, hsl(195 80% 45% / 0.12), transparent 70%);
+    background-attachment: fixed;
+  }
+}
+
+@layer utilities {
+  .text-gradient-brand {
+    background: var(--gradient-text);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .bg-gradient-sunset {
+    background: var(--gradient-sunset);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--glow-soft);
+  }
+
+  .grid-bg {
+    background-image:
+      linear-gradient(hsl(220 18% 14% / 0.6) 1px, transparent 1px),
+      linear-gradient(90deg, hsl(220 18% 14% / 0.6) 1px, transparent 1px);
+    background-size: 48px 48px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black, transparent 80%);
+  }
+}
+
