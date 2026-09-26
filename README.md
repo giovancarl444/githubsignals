@@ -41,7 +41,7 @@ npm run start
 
 Migrations use a direct or session-pooler database URL, verify TLS, check the project reference and retain migration checksums. Never modify an applied migration; add a new one. `DATABASE_URL` and backup keys are operator secrets, not application/browser credentials.
 
-Create an admin through Supabase Auth with public signup disabled, then add that Auth user's ID to `public.admin_users`. The authenticated `/admin` dashboard supports project/offer editing, draft previews, CSV imports, subscriber exports and unsubscribe, enquiry management, campaign preparation/scheduling/sending, job retries and revenue reporting. The schema denies public access to subscriber and financial data.
+Create an admin through Supabase Auth with public signup disabled, then add that Auth user's ID to `public.admin_users`. Configure the [invitation and recovery templates](docs/admin-access.md) so editors can set their own password at `/admin/activate`. The authenticated `/admin` dashboard supports project/offer editing, draft previews, CSV imports, subscriber exports and unsubscribe, enquiry management, campaign preparation/scheduling/sending, job retries and revenue reporting. The schema denies public access to subscriber and financial data.
 
 ## Editorial and commercial workflows
 
