@@ -4,9 +4,11 @@ export const dynamic = 'force-dynamic';
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const [p, o] = await Promise.all([projects(), offers()]);
   return [
-    ...['', '/projects', '/tools', '/partners', '/privacy', '/disclosure'].map((path) => ({
-      url: `https://githubsignals.com${path}`,
-    })),
+    ...['', '/projects', '/tools', '/partners', '/about', '/privacy', '/disclosure'].map(
+      (path) => ({
+        url: `https://githubsignals.com${path}`,
+      }),
+    ),
     ...p.map((p) => ({
       url: `https://githubsignals.com/projects/${p.slug}`,
       lastModified: p.updated_at,

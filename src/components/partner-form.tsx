@@ -1,5 +1,6 @@
 'use client';
 import { useState } from 'react';
+import { ArrowUpRight, Instagram } from 'lucide-react';
 import { Turnstile } from './turnstile';
 export function PartnerForm({ enabled }: { enabled: boolean }) {
   const [token, setToken] = useState(''),
@@ -9,15 +10,24 @@ export function PartnerForm({ enabled }: { enabled: boolean }) {
     [resetKey, setResetKey] = useState(0);
   if (!enabled)
     return (
-      <div className="panel">
-        <h2>Let’s make a useful introduction.</h2>
+      <div className="panel partner-direct">
+        <Instagram size={27} />
+        <h3>Let’s talk about the fit.</h3>
         <p>
-          Partnership enquiries are currently welcome through{' '}
-          <a className="text-link" href="https://www.instagram.com/githubsignals/">
-            @githubsignals on Instagram
-          </a>
-          .
+          For partnership enquiries, message @githubsignals on Instagram. Include your product link
+          and a short introduction so we can pick up the conversation.
         </p>
+        <a
+          className="button"
+          href="https://www.instagram.com/githubsignals/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Start on Instagram <ArrowUpRight size={16} />
+        </a>
+        <span className="fine-print">
+          Sponsorships · Affiliate partnerships · Product introductions
+        </span>
       </div>
     );
   return (

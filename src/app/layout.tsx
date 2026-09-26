@@ -2,6 +2,7 @@ import { isProduction } from '@/lib/config';
 import type { Metadata } from 'next';
 import { Header, Footer } from '@/components/site-shell';
 import '@/index.css';
+import '@/publication.css';
 export const metadata: Metadata = {
   metadataBase: new URL('https://githubsignals.com'),
   title: {

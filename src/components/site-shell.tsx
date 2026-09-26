@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { ArrowUpRight, Radio, Github, Instagram } from 'lucide-react';
+import { SiteNavigation } from './site-navigation';
+import { signupsEnabled } from '@/lib/config';
 export function Brand() {
   return (
     <Link href="/" className="brand" aria-label="GitHub Signals home">
@@ -18,42 +20,63 @@ export function Header() {
     <header className="site-header">
       <div className="shell header-inner">
         <Brand />
-        <nav aria-label="Main navigation">
-          <Link href="/projects">Projects</Link>
-          <Link href="/tools">Tools</Link>
-          <Link href="/partners">
-            Partner with us <ArrowUpRight size={14} />
-          </Link>
-        </nav>
-        <Link href="/#newsletter" className="button button-small">
-          Get the signal <ArrowUpRight size={14} />
-        </Link>
+        <SiteNavigation />
+        <div className="header-cta">
+          {signupsEnabled() ? (
+            <Link href="/#newsletter" className="button button-small">
+              The weekly signal <ArrowUpRight size={14} />
+            </Link>
+          ) : (
+            <a
+              href="https://www.instagram.com/githubsignals/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button button-small"
+            >
+              <Instagram size={15} /> Follow the signal
+            </a>
+          )}
+        </div>
       </div>
     </header>
   );
 }
 export function Footer() {
   return (
-    <footer className="site-footer shell">
-      <div>
+    <footer className="site-footer shell publication-footer">
+      <div className="footer-intro">
         <Brand />
-        <p>Good projects deserve to be found.</p>
+        <p>
+          Good projects deserve to be found.
+          <br />
+          Independent discoveries for people who build.
+        </p>
       </div>
-      <div className="footer-links">
+      <div className="footer-column">
+        <span>Explore</span>
+        <Link href="/projects">Project collection</Link>
+        <Link href="/tools">The toolbox</Link>
         <a
           href="https://www.instagram.com/githubsignals/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <Instagram size={16} /> Instagram
+          Instagram <ArrowUpRight size={13} />
         </a>
-        <Link href="/partners">Partnerships</Link>
-        <Link href="/privacy">Privacy</Link>
-        <Link href="/disclosure">Editorial & affiliates</Link>
       </div>
-      <p className="copyright">
-        © {new Date().getFullYear()} GitHub Signals. Independent of GitHub, Inc.
-      </p>
+      <div className="footer-column">
+        <span>Publication</span>
+        <Link href="/about">About GitHub Signals</Link>
+        <Link href="/partners">Partner with us</Link>
+        <Link href="/disclosure">Editorial standards</Link>
+      </div>
+      <div className="footer-bottom">
+        <p className="copyright">
+          © {new Date().getFullYear()} GitHub Signals. Independent of GitHub, Inc.
+        </p>
+        <Link href="/privacy">Privacy</Link>
+        <Link href="/disclosure">Affiliate disclosure</Link>
+      </div>
     </footer>
   );
 }

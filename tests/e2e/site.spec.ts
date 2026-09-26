@@ -30,6 +30,7 @@ test('serves real pages, metadata, and preview robots without fictional offers',
   for (const path of [
     '/tools',
     '/partners',
+    '/about',
     '/privacy',
     '/disclosure',
     '/admin',
@@ -50,6 +51,67 @@ test('serves real pages, metadata, and preview robots without fictional offers',
   expect(await (await request.get('/robots.txt')).text()).toMatch(/^Disallow: \/$/m);
   await page.goto('/tools');
   await expect(page.locator('a[href^="/go/"]')).toHaveCount(0);
+});
+test('makes the collection searchable and preserves direct source links', async ({ page }) => {
+  await page.goto('/projects');
+  await page.getByRole('textbox', { name: 'Search projects' }).fill('ZCode');
+  await page.getByRole('button', { name: 'Search', exact: true }).click();
+  await expect(page.getByRole('heading', { level: 2, name: 'ZCode' })).toBeVisible();
+  await expect(page.getByText('1 discovery for “ZCode”')).toBeVisible();
+  await page.locator('.discovery-card').click();
+  await expect(page).toHaveURL(/\/projects\/zcode$/);
+  await expect(page.getByRole('link', { name: 'Open repository' })).toHaveAttribute(
+    'href',
+    'https://github.com/zai-org/ZCode',
+  );
+  await expect(page.getByRole('link', { name: 'Original Instagram post' })).toHaveAttribute(
+    'href',
+    'https://www.instagram.com/reel/Ddi8zSrj9vx/',
+  );
+  await page.goto('/projects?q=no-match-for-this-project');
+  await expect(
+    page.getByRole('heading', { name: 'A different search might find it.' }),
+  ).toBeVisible();
+  await page.getByRole('link', { name: 'Explore all projects' }).click();
+  await expect(page.locator('.discovery-card')).toHaveCount(4);
+});
+test('supports navigation with an accessible mobile menu and current-page state', async ({
+  page,
+}) => {
+  await page.goto('/');
+  const mobile = (page.viewportSize()?.width || 1280) <= 800;
+  if (mobile) {
+    await page.getByRole('button', { name: 'Menu', exact: true }).click();
+    await expect(page.getByRole('button', { name: 'Close menu' })).toHaveAttribute(
+      'aria-expanded',
+      'true',
+    );
+  }
+  await page
+    .getByRole('navigation', { name: 'Main navigation' })
+    .getByRole('link', { name: 'Toolbox' })
+    .click();
+  await expect(page).toHaveURL(/\/tools$/);
+  if (mobile) {
+    await expect(page.getByRole('button', { name: 'Menu', exact: true })).toHaveAttribute(
+      'aria-expanded',
+      'false',
+    );
+    await page.getByRole('button', { name: 'Menu', exact: true }).click();
+  }
+  const active = page
+    .getByRole('navigation', { name: 'Main navigation' })
+    .getByRole('link', { name: 'Toolbox' });
+  await expect(active).toHaveAttribute('aria-current', 'page');
+  if (mobile) {
+    await active.focus();
+    await page.keyboard.press('Escape');
+    await expect(page.getByRole('button', { name: 'Menu', exact: true })).toBeFocused();
+    await expect(page.getByRole('button', { name: 'Menu', exact: true })).toHaveAttribute(
+      'aria-expanded',
+      'false',
+    );
+  }
 });
 test('keeps invitation tokens out of requests and waits for an explicit password submission', async ({
   page,

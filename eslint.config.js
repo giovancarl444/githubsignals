@@ -4,6 +4,13 @@ import typescript from 'eslint-config-next/typescript';
 export default defineConfig([
   ...next,
   ...typescript,
-  globalIgnores(['.next/**', 'next-env.d.ts', 'playwright-report/**', 'test-results/**']),
+  globalIgnores([
+    '.next/**',
+    '.local/**',
+    '.agents/**',
+    'next-env.d.ts',
+    'playwright-report/**',
+    'test-results/**',
+  ]),
   { rules: { '@typescript-eslint/no-require-imports': 'off' } },
 ]);
