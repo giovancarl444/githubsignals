@@ -54,4 +54,6 @@ The dashboard retains drafts until an explicit publication action. Campaign body
 - Mobile/keyboard behavior, canonical `.com`, GSC verification, OG image, robots and sitemap are checked on the deployment. Ensure production `robots.txt` allows indexing; previews stay blocked.
 - A provider-level recovery drill succeeds with email disabled. Recheck suppression against current provider state before resuming sends.
 
-**Not yet proven without account access:** Vercel deployment, Supabase hosted migration/restore, live Resend delivery, Gmail/Outlook receipt, mailbox aliases, complete DNS export, nameserver changes and production cutover.
+**Verified on the isolated preview:** Vercel deployment, Supabase hosted migrations in Stockholm, live database health, public/private database permissions, and all ten desktop/mobile browser checks. See [handoff status](handoff-status.md) for the dated evidence.
+
+**Still required before production:** production billing/account setup, owner admin provisioning, GitHub-to-Vercel application access, live Resend delivery, Gmail/Outlook receipt, mailbox aliases, a cloud restore drill, complete DNS export, nameserver changes and production cutover. The current preview is on Hobby with email and signup disabled. Its disposable deployment export omits cron schedules; the repository's production `vercel.json` retains them and requires Pro. Do not enable email on that cron-free preview.

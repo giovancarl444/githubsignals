@@ -13,3 +13,6 @@ playwright-report/
 backups/
 .local/
 .firecrawl/
+# Provider CLI-installed agent guidance is local tooling, not application source.
+.agents/
+skills-lock.json

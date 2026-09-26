@@ -2,7 +2,7 @@
 
 Independent source for [githubsignals.com](https://githubsignals.com), built with Next.js 16, React, TypeScript, Tailwind/shadcn, Supabase and Resend. No Lovable runtime or publishing access is required to run this application.
 
-**Current state:** application implementation and selected Instagram archive are in this repository. Production accounts, mail authentication, live delivery, a cloud restore drill and DNS cutover remain deployment prerequisites. The live domain continues serving the previous Lovable deployment until that cutover.
+**Current state:** [open the independent preview](https://githubsignals-preview-giovancarl444.vercel.app). It runs in the owner's Vercel account with an isolated Supabase database in Stockholm. The implementation and selected Instagram archive are in this repository; [GitHub Actions passed](https://github.com/giovancarl444/githubsignals/actions/runs/36203875512). Production accounts, mail authentication, live delivery, a cloud restore drill and DNS cutover remain deployment prerequisites. The live domain continues serving the previous Lovable deployment until that cutover. See the [dated handoff status](docs/handoff-status.md) for verified evidence and remaining account setup.
 
 ## Start locally
 
