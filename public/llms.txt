@@ -1,8 +1,14 @@
 # GitHub Signals
 
-> The daily scout for open-source projects worth your stars — one repo a day, plain-English pitch, straight from Hacker News to your inbox.
+> An independent publication discovering useful open-source projects and developer tools.
 
-## Pages
+Canonical website: https://githubsignals.com
+Instagram: https://www.instagram.com/githubsignals/
 
-- [Home](/): Subscribe to a daily curated GitHub repo signal picked from the front page of Hacker News.
+- [Project discoveries](https://githubsignals.com/projects): editorial articles with direct repository links and original Instagram permalinks.
+- [Tools and offers](https://githubsignals.com/tools): clearly disclosed recommendations; offers publish only with confirmed agreements.
+- [Partnerships](https://githubsignals.com/partners): sponsorship enquiries.
+- [Editorial and affiliate policy](https://githubsignals.com/disclosure)
+- [Privacy](https://githubsignals.com/privacy)
 
+The newsletter is weekly and requires confirmation. The publication is independent of GitHub, Inc.

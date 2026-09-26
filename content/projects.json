@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1e588bb3-eb65-5145-9ca5-78e13b8edb99",
+    "slug": "zcode",
+    "title": "ZCode",
+    "summary": "An AI coding workspace for desktop, browser and terminal.",
+    "body": "ZCode brings a coding agent and its interfaces into one project. It is worth exploring if you want an agent workflow that can move between a desktop app, a web client and your terminal.\n\nStart with the repository’s installation instructions and supported providers. Review the permissions you grant an agent before using it in a working repository.",
+    "repository_url": "https://github.com/zai-org/ZCode",
+    "instagram_url": "https://www.instagram.com/reel/Ddi8zSrj9vx/",
+    "category": "AI & agents",
+    "tags": ["AI", "Coding agents"],
+    "status": "published",
+    "published_at": "2026-09-21T12:00:00Z",
+    "updated_at": "2026-09-26T00:00:00Z"
+  },
+  {
+    "id": "8abc3509-01d7-5356-94bd-775ab8feef14",
+    "slug": "sprite-gen",
+    "title": "Sprite Gen",
+    "summary": "Turn a character image into clean sprites and animation atlases.",
+    "body": "Sprite Gen is a toolkit for generating 2D character sprites and animation atlases. Its pipeline separates generation, background cleanup and frame extraction so the output can be prepared for a game engine.\n\nExplore the repository for setup requirements, generation tools and examples. This is an editorial discovery from our Instagram archive; it is not a paid recommendation.",
+    "repository_url": "https://github.com/aldegad/sprite-gen",
+    "instagram_url": "https://www.instagram.com/p/DdIc2jHAZp9/",
+    "category": "Game development",
+    "tags": ["Game development", "Sprites"],
+    "status": "published",
+    "published_at": "2026-09-10T12:00:00Z",
+    "updated_at": "2026-09-26T00:00:00Z"
+  },
+  {
+    "id": "f6d6e3a0-408c-52a0-b706-abae599e8fe6",
+    "slug": "turbo-vision",
+    "title": "Turbo Vision",
+    "summary": "Classic text interfaces, brought to modern terminals.",
+    "body": "Turbo Vision is a modern port of the classic C++ framework for text-based user interfaces. The project brings windows, menus and dialogs to modern platforms, with Unicode support.\n\nIt is an interesting starting point for a terminal application that needs a structured interface. The repository includes examples and build instructions for the supported platforms.",
+    "repository_url": "https://github.com/magiblot/tvision",
+    "instagram_url": "https://www.instagram.com/reel/DXlD06jDErI/",
+    "category": "Developer tools",
+    "tags": ["C++", "Terminal"],
+    "status": "published",
+    "published_at": "2026-04-25T12:00:00Z",
+    "updated_at": "2026-09-26T00:00:00Z"
+  },
+  {
+    "id": "8cca3902-256c-5e77-a40e-ad2188403c0e",
+    "slug": "hextra",
+    "title": "Hextra",
+    "summary": "A Hugo theme for documentation, blogs and project websites.",
+    "body": "Hextra is a theme for Hugo that helps turn project documentation and blog content into a responsive website. Its documentation-focused features include search, code highlighting and navigation for longer articles.\n\nUse the repository and theme documentation to evaluate how it fits your content. The link below takes you directly to the open-source project.",
+    "repository_url": "https://github.com/imfing/hextra",
+    "instagram_url": "https://www.instagram.com/reel/DW7InAgjOCH/",
+    "category": "Web development",
+    "tags": ["Hugo", "Documentation"],
+    "status": "published",
+    "published_at": "2026-04-09T12:00:00Z",
+    "updated_at": "2026-09-26T00:00:00Z"
+  }
+]

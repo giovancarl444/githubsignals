@@ -1,0 +1,3395 @@
+{
+  "project_id": "cf52f827-4294-4886-831d-23e566684763",
+  "exported_at": "2026-09-26",
+  "note": "Connector-visible history and patch data, not original Git objects. Preserve any is_incomplete flags.",
+  "pagination": {
+    "next_cursor": null,
+    "has_more": false
+  },
+  "edits": [
+    {
+      "id": "edt-f612d3bf-b91d-48fa-abc8-ccf2cda10f7c",
+      "type": "ai_update",
+      "commit_sha": "a085f4c426941f7a889bfeb278acdf6d9ef35f13",
+      "commit_message": "Built dark landing page",
+      "status": "completed",
+      "created_at": "2026-04-30T11:01:14Z",
+      "export": {
+        "diffs": [
+          {
+            "action": "edit",
+            "file_path": "index.html",
+            "file_type": "html",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 3,
+                "oldCount": 14,
+                "newStart": 3,
+                "newCount": 12,
+                "lines": [
+                  {
+                    "type": "context",
+                    "content": "  <head>"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta charset=\"UTF-8\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <!-- TODO: Set the document title to the name of your application -->"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <title>Lovable App</title>"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <meta name=\"description\" content=\"Lovable Generated Project\" />"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <meta name=\"author\" content=\"Lovable\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <title>GitHub Signals — Daily open-source drops, spotted on Hacker News</title>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta name=\"description\" content=\"The scout for trending open-source GitHub projects. Daily drops, plain-English pitches, straight to your inbox.\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta name=\"author\" content=\"GitHub Signals\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <!-- TODO: Update og:title to match your application name -->"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <meta property=\"og:title\" content=\"Lovable App\" />"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <meta property=\"og:description\" content=\"Lovable Generated Project\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta property=\"og:title\" content=\"GitHub Signals — Daily open-source drops\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta property=\"og:description\" content=\"The scout for trending open-source GitHub projects. Daily drops, straight to your inbox.\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta property=\"og:type\" content=\"website\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta property=\"og:image\" content=\"https://lovable.dev/opengraph-image-p98pqg.png\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "action": "edit",
+            "file_path": "src/index.css",
+            "file_type": "css",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 2,
+                "oldCount": 95,
+                "newStart": 2,
+                "newCount": 84,
+                "lines": [
+                  {
+                    "type": "context",
+                    "content": "@tailwind components;"
+                  },
+                  {
+                    "type": "context",
+                    "content": "@tailwind utilities;"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. "
+                  },
+                  {
+                    "type": "remove",
+                    "content": "All colors MUST be HSL."
+                  },
+                  {
+                    "type": "remove",
+                    "content": "*/"
+                  },
+                  {
+                    "type": "add",
+                    "content": "/* GitHub Signals — dark, developer-native, sunset-on-ocean accents */"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "@layer base {"
+                  },
+                  {
+                    "type": "context",
+                    "content": "  :root {"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --background: 0 0% 100%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --foreground: 222.2 84% 4.9%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    /* Core surfaces — deep near-black with subtle blue undertone */"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --background: 220 25% 4%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --foreground: 30 30% 96%;"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --card: 0 0% 100%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --card-foreground: 222.2 84% 4.9%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --card: 220 22% 7%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --card-foreground: 30 30% 96%;"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --popover: 0 0% 100%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --popover-foreground: 222.2 84% 4.9%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --popover: 220 25% 5%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --popover-foreground: 30 30% 96%;"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --primary: 222.2 47.4% 11.2%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --primary-foreground: 210 40% 98%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    /* Primary — sunset orange (mascot accent) */"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --primary: 22 95% 58%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --primary-foreground: 220 30% 6%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --primary-glow: 32 100% 65%;"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --secondary: 210 40% 96.1%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --secondary-foreground: 222.2 47.4% 11.2%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    /* Secondary — ocean teal (mascot horizon) */"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --secondary: 195 70% 45%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --secondary-foreground: 220 30% 6%;"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --muted: 210 40% 96.1%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --muted-foreground: 215.4 16.3% 46.9%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --muted: 220 18% 12%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --muted-foreground: 220 10% 62%;"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --accent: 210 40% 96.1%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --accent-foreground: 222.2 47.4% 11.2%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --accent: 32 100% 65%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --accent-foreground: 220 30% 6%;"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --destructive: 0 84.2% 60.2%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --destructive-foreground: 210 40% 98%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --destructive: 0 75% 55%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --destructive-foreground: 30 30% 96%;"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --border: 214.3 31.8% 91.4%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --input: 214.3 31.8% 91.4%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --ring: 222.2 84% 4.9%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --border: 220 18% 14%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --input: 220 18% 12%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --ring: 22 95% 58%;"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --radius: 0.5rem;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --radius: 0.75rem;"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-background: 0 0% 98%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    /* Brand gradients */"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --gradient-sunset: linear-gradient(135deg, hsl(22 95% 58%), hsl(32 100% 65%) 50%, hsl(355 85% 60%));"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --gradient-ocean: linear-gradient(180deg, hsl(22 95% 58% / 0.15), hsl(195 70% 35% / 0.1) 60%, transparent);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --gradient-text: linear-gradient(135deg, hsl(32 100% 70%), hsl(22 95% 60%) 50%, hsl(195 80% 55%));"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-foreground: 240 5.3% 26.1%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    /* Glows */"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --glow-primary: 0 0 80px hsl(22 95% 58% / 0.35);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --glow-soft: 0 20px 60px -20px hsl(22 95% 58% / 0.5);"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-primary: 240 5.9% 10%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-primary-foreground: 0 0% 98%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-accent: 240 4.8% 95.9%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-accent-foreground: 240 5.9% 10%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-border: 220 13% 91%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-ring: 217.2 91.2% 59.8%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --sidebar-background: 220 25% 4%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --sidebar-foreground: 30 30% 96%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --sidebar-primary: 22 95% 58%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --sidebar-primary-foreground: 220 30% 6%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --sidebar-accent: 220 18% 12%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --sidebar-accent-foreground: 30 30% 96%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --sidebar-border: 220 18% 14%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --sidebar-ring: 22 95% 58%;"
+                  },
+                  {
+                    "type": "context",
+                    "content": "  }"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "  .dark {"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --background: 222.2 84% 4.9%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --foreground: 210 40% 98%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --card: 222.2 84% 4.9%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --card-foreground: 210 40% 98%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --popover: 222.2 84% 4.9%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --popover-foreground: 210 40% 98%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --primary: 210 40% 98%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --primary-foreground: 222.2 47.4% 11.2%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --secondary: 217.2 32.6% 17.5%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --secondary-foreground: 210 40% 98%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --muted: 217.2 32.6% 17.5%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --muted-foreground: 215 20.2% 65.1%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --accent: 217.2 32.6% 17.5%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --accent-foreground: 210 40% 98%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --destructive: 0 62.8% 30.6%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --destructive-foreground: 210 40% 98%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --border: 217.2 32.6% 17.5%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --input: 217.2 32.6% 17.5%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --ring: 212.7 26.8% 83.9%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-background: 240 5.9% 10%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-foreground: 240 4.8% 95.9%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-primary: 224.3 76.3% 48%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-primary-foreground: 0 0% 100%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-accent: 240 3.7% 15.9%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-accent-foreground: 240 4.8% 95.9%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-border: 240 3.7% 15.9%;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    --sidebar-ring: 217.2 91.2% 59.8%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    /* Same as :root — this app is dark-mode only */"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --background: 220 25% 4%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --foreground: 30 30% 96%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --card: 220 22% 7%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --card-foreground: 30 30% 96%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --popover: 220 25% 5%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --popover-foreground: 30 30% 96%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --primary: 22 95% 58%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --primary-foreground: 220 30% 6%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --secondary: 195 70% 45%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --secondary-foreground: 220 30% 6%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --muted: 220 18% 12%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --muted-foreground: 220 10% 62%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --accent: 32 100% 65%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --accent-foreground: 220 30% 6%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --destructive: 0 75% 55%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --destructive-foreground: 30 30% 96%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --border: 220 18% 14%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --input: 220 18% 12%;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    --ring: 22 95% 58%;"
+                  },
+                  {
+                    "type": "context",
+                    "content": "  }"
+                  },
+                  {
+                    "type": "context",
+                    "content": "}"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  }
+                ]
+              },
+              {
+                "oldStart": 99,
+                "oldCount": 7,
+                "newStart": 88,
+                "newCount": 42,
+                "lines": [
+                  {
+                    "type": "context",
+                    "content": "    @apply border-border;"
+                  },
+                  {
+                    "type": "context",
+                    "content": "  }"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "  html {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    @apply dark;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    color-scheme: dark;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  }"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "  body {"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    @apply bg-background text-foreground;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    @apply bg-background text-foreground antialiased;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    font-feature-settings: \"ss01\", \"cv11\";"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    background-image:"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      radial-gradient(ellipse 80% 50% at 50% -10%, hsl(22 95% 58% / 0.18), transparent 70%),"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      radial-gradient(ellipse 60% 50% at 80% 110%, hsl(195 80% 45% / 0.12), transparent 70%);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    background-attachment: fixed;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  }"
+                  },
+                  {
+                    "type": "add",
+                    "content": "}"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "@layer utilities {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  .text-gradient-brand {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    background: var(--gradient-text);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    -webkit-background-clip: text;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    background-clip: text;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    color: transparent;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  }"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "  .bg-gradient-sunset {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    background: var(--gradient-sunset);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  }"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "  .shadow-glow {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    box-shadow: var(--glow-soft);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  }"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "  .grid-bg {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    background-image:"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      linear-gradient(hsl(220 18% 14% / 0.6) 1px, transparent 1px),"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      linear-gradient(90deg, hsl(220 18% 14% / 0.6) 1px, transparent 1px);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    background-size: 48px 48px;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, black, transparent 80%);"
+                  },
+                  {
+                    "type": "context",
+                    "content": "  }"
+                  },
+                  {
+                    "type": "context",
+                    "content": "}"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "action": "edit",
+            "file_path": "src/pages/Index.tsx",
+            "file_type": "tsx",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 1,
+                "oldCount": 16,
+                "newStart": 1,
+                "newCount": 155,
+                "lines": [
+                  {
+                    "type": "remove",
+                    "content": "// Update this page (the content is just a fallback if you fail to update the page)"
+                  },
+                  {
+                    "type": "add",
+                    "content": "import { useState } from \"react\";"
+                  },
+                  {
+                    "type": "add",
+                    "content": "import { Button } from \"@/components/ui/button\";"
+                  },
+                  {
+                    "type": "add",
+                    "content": "import { Input } from \"@/components/ui/input\";"
+                  },
+                  {
+                    "type": "add",
+                    "content": "import { toast } from \"@/components/ui/sonner\";"
+                  },
+                  {
+                    "type": "add",
+                    "content": "import { Github, Instagram, Mail, Sparkles, ArrowRight } from \"lucide-react\";"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "const Index = () => {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  const [email, setEmail] = useState(\"\");"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  const [showFeed, setShowFeed] = useState(false);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  const [submitting, setSubmitting] = useState(false);"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "  const handleSubscribe = (e: React.FormEvent) => {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    e.preventDefault();"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    if (!email || !email.includes(\"@\")) {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      toast.error(\"Enter a valid email\");"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      return;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    }"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    setSubmitting(true);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    // Placeholder — wire to backend later"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    setTimeout(() => {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      toast.success(\"You're on the list. Tomorrow's drop incoming.\");"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      setEmail(\"\");"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      setSubmitting(false);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    }, 600);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  };"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "// IMPORTANT: Fully REPLACE this with your own code"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "const PlaceholderIndex = () => {"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "  // PLACEHOLDER: Replace this entire return statement with the user's app."
+                  },
+                  {
+                    "type": "remove",
+                    "content": "  // The inline background color is intentionally not part of the design system."
+                  },
+                  {
+                    "type": "context",
+                    "content": "  return ("
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <div className=\"flex min-h-screen items-center justify-center\" style={{ backgroundColor: '#fcfbf8' }}>"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "      <img data-lovable-blank-page-placeholder=\"REMOVE_THIS\" src=\"/placeholder.svg\" alt=\"Your app will live here!\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <main className=\"relative min-h-screen overflow-hidden\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      {/* Decorative grid */}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      <div className=\"pointer-events-none absolute inset-0 grid-bg opacity-60\" aria-hidden />"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "      {/* Nav */}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      <header className=\"relative z-10 mx-auto flex max-w-6xl items-center justify-between px-6 py-6\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        <div className=\"flex items-center gap-2\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <div className=\"flex h-9 w-9 items-center justify-center rounded-lg bg-gradient-sunset shadow-glow\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            <Github className=\"h-5 w-5 text-primary-foreground\" strokeWidth={2.5} />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <span className=\"text-lg font-semibold tracking-tight\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            GitHub <span className=\"text-gradient-brand\">Signals</span>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          </span>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        <a"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          href=\"https://www.instagram.com/githubsignals\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "          target=\"_blank\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "          rel=\"noopener noreferrer\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "          className=\"flex items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-2 text-sm text-muted-foreground backdrop-blur transition hover:text-foreground\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "        >"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <Instagram className=\"h-4 w-4\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <span className=\"hidden sm:inline\">@githubsignals</span>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        </a>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      </header>"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "      {/* Hero */}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      <section className=\"relative z-10 mx-auto max-w-4xl px-6 pb-16 pt-16 text-center sm:pt-24\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        <div className=\"mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-4 py-1.5 text-xs font-medium text-muted-foreground backdrop-blur\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <Sparkles className=\"h-3.5 w-3.5 text-primary\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <span>Spotted on Hacker News · 8.9K followers</span>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "        <h1 className=\"text-balance text-5xl font-bold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          The daily scout for{\" \"}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <span className=\"text-gradient-brand\">open-source</span> projects worth your stars."
+                  },
+                  {
+                    "type": "add",
+                    "content": "        </h1>"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "        <p className=\"mx-auto mt-6 max-w-2xl text-balance text-lg text-muted-foreground sm:text-xl\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          One repo a day. Plain-English pitch. Straight from the front page of Hacker News"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          to your inbox — before everyone else clones it."
+                  },
+                  {
+                    "type": "add",
+                    "content": "        </p>"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "        {/* Newsletter */}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        <form"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          onSubmit={handleSubscribe}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          className=\"mx-auto mt-10 flex w-full max-w-md flex-col gap-3 sm:flex-row\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "        >"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <div className=\"relative flex-1\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            <Mail className=\"pointer-events-none absolute left-3.5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            <Input"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              type=\"email\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "              required"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              value={email}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              onChange={(e) => setEmail(e.target.value)}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              placeholder=\"you@dev.inbox\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "              className=\"h-12 border-border bg-card/80 pl-10 text-base backdrop-blur focus-visible:ring-primary\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "            />"
+                  },
+                  {
+                    "type": "context",
+                    "content": "          </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <Button"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            type=\"submit\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "            disabled={submitting}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            className=\"h-12 bg-gradient-sunset px-6 text-base font-semibold text-primary-foreground shadow-glow transition hover:opacity-95\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "          >"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            {submitting ? \"Joining…\" : \"Get the drops\"}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            <ArrowRight className=\"ml-1 h-4 w-4\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          </Button>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        </form>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        <p className=\"mt-3 text-xs text-muted-foreground\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          Free forever. One email a day. Unsubscribe with one click."
+                  },
+                  {
+                    "type": "add",
+                    "content": "        </p>"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "        {/* Toggle Instagram feed */}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        <div className=\"mt-12\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <button"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            onClick={() => setShowFeed((v) => !v)}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            className=\"inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-5 py-2.5 text-sm font-medium text-foreground backdrop-blur transition hover:border-primary/50 hover:bg-card\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "          >"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            <Instagram className=\"h-4 w-4 text-primary\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            {showFeed ? \"Hide Instagram feed\" : \"Show Instagram feed\"}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          </button>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      </section>"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "      {/* Instagram feed (placeholder) */}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      {showFeed && ("
+                  },
+                  {
+                    "type": "add",
+                    "content": "        <section className=\"relative z-10 mx-auto max-w-5xl px-6 pb-24\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <div className=\"rounded-2xl border border-border bg-card/60 p-6 backdrop-blur sm:p-8\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            <div className=\"mb-6 flex items-center justify-between\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              <div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "                <h2 className=\"text-xl font-semibold\">Latest drops</h2>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "                <p className=\"text-sm text-muted-foreground\">Live from @githubsignals</p>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              <a"
+                  },
+                  {
+                    "type": "add",
+                    "content": "                href=\"https://www.instagram.com/githubsignals\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "                target=\"_blank\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "                rel=\"noopener noreferrer\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "                className=\"text-sm text-primary hover:underline\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "              >"
+                  },
+                  {
+                    "type": "add",
+                    "content": "                View on Instagram →"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              </a>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            <div className=\"grid grid-cols-2 gap-3 sm:grid-cols-3\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              {Array.from({ length: 6 }).map((_, i) => ("
+                  },
+                  {
+                    "type": "add",
+                    "content": "                <div"
+                  },
+                  {
+                    "type": "add",
+                    "content": "                  key={i}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "                  className=\"aspect-square animate-pulse rounded-lg bg-muted/60\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "                />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              ))}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            <p className=\"mt-6 text-center text-xs text-muted-foreground\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              Live feed integration coming soon — connect Instagram Graph API to populate."
+                  },
+                  {
+                    "type": "add",
+                    "content": "            </p>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        </section>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      )}"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "      {/* Footer */}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      <footer className=\"relative z-10 border-t border-border/60 py-8\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        <div className=\"mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-6 text-sm text-muted-foreground sm:flex-row\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <p>© {new Date().getFullYear()} GitHub Signals</p>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <p>Built for developers. Powered by curiosity.</p>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      </footer>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    </main>"
+                  },
+                  {
+                    "type": "context",
+                    "content": "  );"
+                  },
+                  {
+                    "type": "context",
+                    "content": "};"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "const Index = PlaceholderIndex;"
+                  },
+                  {
+                    "type": "remove",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "export default Index;"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "edt-365fe67d-d35d-4bea-80ed-968d73be600c",
+      "type": "ai_update",
+      "commit_sha": "836a66b9a37696faa3f9c09214e9e4ee218547ca",
+      "commit_message": "Added animated slide feed",
+      "status": "completed",
+      "created_at": "2026-04-30T11:04:09Z",
+      "export": {
+        "diffs": [
+          {
+            "action": "new",
+            "file_path": "src/components/InstagramSlider.tsx",
+            "file_type": "tsx",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 0,
+                "oldCount": 0,
+                "newStart": 1,
+                "newCount": 79,
+                "lines": [
+                  {
+                    "type": "add",
+                    "content": "import { Instagram } from \"lucide-react\";"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "// Placeholder posts — will be replaced by live Instagram Graph API data"
+                  },
+                  {
+                    "type": "add",
+                    "content": "const placeholderPosts = ["
+                  },
+                  {
+                    "type": "add",
+                    "content": "  { id: \"1\", title: \"TinyTTS\", caption: \"The World's Smallest AI Voice Model — 1.6M params, 3.4MB\", gradient: \"from-orange-500/20 to-pink-500/20\" },"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  { id: \"2\", title: \"uscode/\", caption: \"Track Changes in US Federal Law Using Git\", gradient: \"from-blue-500/20 to-cyan-500/20\" },"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  { id: \"3\", title: \"badclaude\", caption: \"Whip Claude into shape when it goes too slow\", gradient: \"from-purple-500/20 to-pink-500/20\" },"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  { id: \"4\", title: \"honker\", caption: \"SQLite extension: NOTIFY/LISTEN semantics\", gradient: \"from-emerald-500/20 to-teal-500/20\" },"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  { id: \"5\", title: \"pvlib\", caption: \"Photovoltaic energy systems toolbox\", gradient: \"from-yellow-500/20 to-orange-500/20\" },"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  { id: \"6\", title: \"warp\", caption: \"The agentic dev environment, born of the terminal\", gradient: \"from-indigo-500/20 to-blue-500/20\" },"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  { id: \"7\", title: \"Ruflo\", caption: \"Multi-agent AI orchestration for Claude Code\", gradient: \"from-red-500/20 to-pink-500/20\" },"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  { id: \"8\", title: \"leaf\", caption: \"Terminal Markdown previewer — GUI-like experience\", gradient: \"from-green-500/20 to-emerald-500/20\" },"
+                  },
+                  {
+                    "type": "add",
+                    "content": "];"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "// Duplicate the array so the marquee loops seamlessly"
+                  },
+                  {
+                    "type": "add",
+                    "content": "const loopPosts = [...placeholderPosts, ...placeholderPosts];"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "export const InstagramSlider = () => {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  return ("
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <section className=\"relative z-10 mx-auto max-w-7xl px-6 pb-24\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      <div className=\"mb-8 flex items-end justify-between gap-4 px-1\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        <div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <div className=\"mb-2 inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1 text-xs font-medium text-muted-foreground backdrop-blur\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            <span className=\"relative flex h-2 w-2\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              <span className=\"absolute inline-flex h-full w-full animate-ping rounded-full bg-primary opacity-75\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              <span className=\"relative inline-flex h-2 w-2 rounded-full bg-primary\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            </span>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            Live feed"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <h2 className=\"text-2xl font-semibold tracking-tight sm:text-3xl\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            Latest <span className=\"text-gradient-brand\">drops</span>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          </h2>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        <a"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          href=\"https://www.instagram.com/githubsignals\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "          target=\"_blank\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "          rel=\"noopener noreferrer\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "          className=\"hidden items-center gap-2 text-sm text-muted-foreground transition hover:text-foreground sm:inline-flex\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "        >"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          <Instagram className=\"h-4 w-4\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          @githubsignals →"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        </a>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "      {/* Marquee */}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      <div"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        className=\"group relative overflow-hidden\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "        style={{"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          maskImage: \"linear-gradient(to right, transparent, black 8%, black 92%, transparent)\","
+                  },
+                  {
+                    "type": "add",
+                    "content": "          WebkitMaskImage: \"linear-gradient(to right, transparent, black 8%, black 92%, transparent)\","
+                  },
+                  {
+                    "type": "add",
+                    "content": "        }}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      >"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        <div className=\"flex w-max animate-marquee gap-5 group-hover:[animation-play-state:paused]\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          {loopPosts.map((post, idx) => ("
+                  },
+                  {
+                    "type": "add",
+                    "content": "            <article"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              key={`${post.id}-${idx}`}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              className=\"group/card relative h-80 w-64 flex-shrink-0 overflow-hidden rounded-2xl border border-border bg-card/60 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:border-primary/40 hover:shadow-glow\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "            >"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              <div className={`absolute inset-0 bg-gradient-to-br ${post.gradient}`} />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              <div className=\"absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              <div className=\"relative flex h-full flex-col justify-end p-5\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "                <div className=\"mb-2 inline-flex w-fit items-center gap-1.5 rounded-full bg-background/60 px-2.5 py-1 text-[10px] font-medium uppercase tracking-wider text-muted-foreground backdrop-blur\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "                  <Instagram className=\"h-3 w-3\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "                  Drop"
+                  },
+                  {
+                    "type": "add",
+                    "content": "                </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "                <h3 className=\"text-lg font-semibold leading-tight\">{post.title}</h3>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "                <p className=\"mt-1 line-clamp-2 text-sm text-muted-foreground\">{post.caption}</p>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "              </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            </article>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          ))}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "      <p className=\"mt-6 text-center text-xs text-muted-foreground\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        Showing sample drops · Connect Instagram Graph API to stream live posts"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      </p>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    </section>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  );"
+                  },
+                  {
+                    "type": "add",
+                    "content": "};"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "action": "edit",
+            "file_path": "src/pages/Index.tsx",
+            "file_type": "tsx",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 3,
+                "oldCount": 6,
+                "newStart": 3,
+                "newCount": 7,
+                "lines": [
+                  {
+                    "type": "context",
+                    "content": "import { Input } from \"@/components/ui/input\";"
+                  },
+                  {
+                    "type": "context",
+                    "content": "import { toast } from \"@/components/ui/sonner\";"
+                  },
+                  {
+                    "type": "context",
+                    "content": "import { Github, Instagram, Mail, Sparkles, ArrowRight } from \"lucide-react\";"
+                  },
+                  {
+                    "type": "add",
+                    "content": "import { InstagramSlider } from \"@/components/InstagramSlider\";"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "const Index = () => {"
+                  },
+                  {
+                    "type": "context",
+                    "content": "  const [email, setEmail] = useState(\"\");"
+                  }
+                ]
+              },
+              {
+                "oldStart": 109,
+                "oldCount": 37,
+                "newStart": 110,
+                "newCount": 7,
+                "lines": [
+                  {
+                    "type": "context",
+                    "content": "      </section>"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "      {/* Instagram feed (placeholder) */}"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "      {showFeed && ("
+                  },
+                  {
+                    "type": "remove",
+                    "content": "        <section className=\"relative z-10 mx-auto max-w-5xl px-6 pb-24\">"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "          <div className=\"rounded-2xl border border-border bg-card/60 p-6 backdrop-blur sm:p-8\">"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "            <div className=\"mb-6 flex items-center justify-between\">"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "              <div>"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "                <h2 className=\"text-xl font-semibold\">Latest drops</h2>"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "                <p className=\"text-sm text-muted-foreground\">Live from @githubsignals</p>"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "              </div>"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "              <a"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "                href=\"https://www.instagram.com/githubsignals\""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "                target=\"_blank\""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "                rel=\"noopener noreferrer\""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "                className=\"text-sm text-primary hover:underline\""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "              >"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "                View on Instagram →"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "              </a>"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "            </div>"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "            <div className=\"grid grid-cols-2 gap-3 sm:grid-cols-3\">"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "              {Array.from({ length: 6 }).map((_, i) => ("
+                  },
+                  {
+                    "type": "remove",
+                    "content": "                <div"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "                  key={i}"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "                  className=\"aspect-square animate-pulse rounded-lg bg-muted/60\""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "                />"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "              ))}"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "            </div>"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "            <p className=\"mt-6 text-center text-xs text-muted-foreground\">"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "              Live feed integration coming soon — connect Instagram Graph API to populate."
+                  },
+                  {
+                    "type": "remove",
+                    "content": "            </p>"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "          </div>"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "        </section>"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "      )}"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      {showFeed && <InstagramSlider />}"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "      {/* Footer */}"
+                  },
+                  {
+                    "type": "context",
+                    "content": "      <footer className=\"relative z-10 border-t border-border/60 py-8\">"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "action": "edit",
+            "file_path": "tailwind.config.ts",
+            "file_type": "ts",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 65,
+                "oldCount": 25,
+                "newStart": 65,
+                "newCount": 22,
+                "lines": [
+                  {
+                    "type": "context",
+                    "content": "      },"
+                  },
+                  {
+                    "type": "context",
+                    "content": "      keyframes: {"
+                  },
+                  {
+                    "type": "context",
+                    "content": "        \"accordion-down\": {"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "          from: {"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "            height: \"0\","
+                  },
+                  {
+                    "type": "remove",
+                    "content": "          },"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "          to: {"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "            height: \"var(--radix-accordion-content-height)\","
+                  },
+                  {
+                    "type": "remove",
+                    "content": "          },"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          from: { height: \"0\" },"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          to: { height: \"var(--radix-accordion-content-height)\" },"
+                  },
+                  {
+                    "type": "context",
+                    "content": "        },"
+                  },
+                  {
+                    "type": "context",
+                    "content": "        \"accordion-up\": {"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "          from: {"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "            height: \"var(--radix-accordion-content-height)\","
+                  },
+                  {
+                    "type": "remove",
+                    "content": "          },"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "          to: {"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "            height: \"0\","
+                  },
+                  {
+                    "type": "add",
+                    "content": "          from: { height: \"var(--radix-accordion-content-height)\" },"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          to: { height: \"0\" },"
+                  },
+                  {
+                    "type": "context",
+                    "content": "        },"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        marquee: {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          \"0%\": { transform: \"translateX(0)\" },"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          \"100%\": { transform: \"translateX(-50%)\" },"
+                  },
+                  {
+                    "type": "context",
+                    "content": "        },"
+                  },
+                  {
+                    "type": "context",
+                    "content": "      },"
+                  },
+                  {
+                    "type": "context",
+                    "content": "      animation: {"
+                  },
+                  {
+                    "type": "context",
+                    "content": "        \"accordion-down\": \"accordion-down 0.2s ease-out\","
+                  },
+                  {
+                    "type": "context",
+                    "content": "        \"accordion-up\": \"accordion-up 0.2s ease-out\","
+                  },
+                  {
+                    "type": "add",
+                    "content": "        marquee: \"marquee 60s linear infinite\","
+                  },
+                  {
+                    "type": "context",
+                    "content": "      },"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    },"
+                  },
+                  {
+                    "type": "context",
+                    "content": "  },"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "edt-655fa353-0aec-41bf-ad29-5edc408edede",
+      "type": "manual_update",
+      "commit_sha": "39e28f2c6f4127f7766a1bb5f9a8a0871f8fd456",
+      "commit_message": "Update site info for publish",
+      "status": "completed",
+      "created_at": "2026-05-26T13:08:45Z",
+      "export": {
+        "diffs": [
+          {
+            "action": "edit",
+            "file_path": "index.html",
+            "file_type": "html",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 4,
+                "oldCount": 18,
+                "newStart": 4,
+                "newCount": 23,
+                "lines": [
+                  {
+                    "type": "context",
+                    "content": "    <meta charset=\"UTF-8\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <title>GitHub Signals — Daily open-source drops, spotted on Hacker News</title>"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <meta name=\"description\" content=\"The scout for trending open-source GitHub projects. Daily drops, plain-English pitches, straight to your inbox.\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta name=\"description\" content=\"The scout for trending open-source GitHub projects. Daily drops, plain-English pitches, straight to your inbox.\">"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta name=\"author\" content=\"GitHub Signals\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <meta property=\"og:title\" content=\"GitHub Signals — Daily open-source drops\" />"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <meta property=\"og:description\" content=\"The scout for trending open-source GitHub projects. Daily drops, straight to your inbox.\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    "
+                  },
+                  {
+                    "type": "add",
+                    "content": "    "
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta property=\"og:type\" content=\"website\" />"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <meta property=\"og:image\" content=\"https://lovable.dev/opengraph-image-p98pqg.png\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta property=\"og:image\" content=\"https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/56a70247-6360-45ba-8780-6310bca610ff/id-preview-836a66b9--cf52f827-4294-4886-831d-23e566684763.lovable.app-1777547067055.png\">"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta name=\"twitter:card\" content=\"summary_large_image\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta name=\"twitter:site\" content=\"@Lovable\" />"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <meta name=\"twitter:image\" content=\"https://lovable.dev/opengraph-image-p98pqg.png\" />"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "  </head>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta name=\"twitter:image\" content=\"https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/56a70247-6360-45ba-8780-6310bca610ff/id-preview-836a66b9--cf52f827-4294-4886-831d-23e566684763.lovable.app-1777547067055.png\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta property=\"og:title\" content=\"GitHub Signals — Daily open-source drops, spotted on Hacker News\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  <meta name=\"twitter:title\" content=\"GitHub Signals — Daily open-source drops, spotted on Hacker News\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  <meta property=\"og:description\" content=\"The scout for trending open-source GitHub projects. Daily drops, plain-English pitches, straight to your inbox.\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  <meta name=\"twitter:description\" content=\"The scout for trending open-source GitHub projects. Daily drops, plain-English pitches, straight to your inbox.\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  <link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "</head>"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "  <body>"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <div id=\"root\"></div>"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "edt-d294469b-835f-4ad1-a435-440c8b77e4c6",
+      "type": "ai_update",
+      "commit_sha": "32c41e1a080c9965e69a146025e79a80547d1d4d",
+      "commit_message": "Added sitemap.xml and robots",
+      "status": "completed",
+      "created_at": "2026-07-08T01:21:25Z",
+      "export": {
+        "diffs": [
+          {
+            "action": "edit",
+            "file_path": "public/robots.txt",
+            "file_type": "txt",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 12,
+                "oldCount": 3,
+                "newStart": 12,
+                "newCount": 5,
+                "lines": [
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "User-agent: *"
+                  },
+                  {
+                    "type": "context",
+                    "content": "Allow: /"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "Sitemap: https://githubsignals.com/sitemap.xml"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "action": "new",
+            "file_path": "public/sitemap.xml",
+            "file_type": "xml",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 0,
+                "oldCount": 0,
+                "newStart": 1,
+                "newCount": 8,
+                "lines": [
+                  {
+                    "type": "add",
+                    "content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  <url>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <loc>https://githubsignals.com/</loc>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <changefreq>weekly</changefreq>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <priority>1.0</priority>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  </url>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "</urlset>"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "edt-e4e32839-eec9-460d-8825-da8c0dd3f985",
+      "type": "ai_update",
+      "commit_sha": "c3fadb19a1e8175b7eeae7706c9803072e145a2f",
+      "commit_message": "Added GSC verification tag",
+      "status": "completed",
+      "created_at": "2026-07-08T01:23:04Z",
+      "export": {
+        "diffs": [
+          {
+            "action": "edit",
+            "file_path": "index.html",
+            "file_type": "html",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 5,
+                "oldCount": 6,
+                "newStart": 5,
+                "newCount": 7,
+                "lines": [
+                  {
+                    "type": "context",
+                    "content": "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <title>GitHub Signals — Daily open-source drops, spotted on Hacker News</title>"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta name=\"description\" content=\"The scout for trending open-source GitHub projects. Daily drops, plain-English pitches, straight to your inbox.\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta name=\"google-site-verification\" content=\"u5pvagiREMdJGJ5wwPq2UDNXL4Pizuf38fjThYrP_k4\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta name=\"author\" content=\"GitHub Signals\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "    "
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "edt-27a53b07-c3f2-41e3-b982-20bc113e4309",
+      "type": "ai_update",
+      "commit_sha": "daeca319093a3a458f7cd1853d90c091bd8cce68",
+      "commit_message": "Added llms.txt for AI indexing",
+      "status": "completed",
+      "created_at": "2026-07-08T01:23:25Z",
+      "export": {
+        "diffs": [
+          {
+            "action": "new",
+            "file_path": "public/llms.txt",
+            "file_type": "txt",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 0,
+                "oldCount": 0,
+                "newStart": 1,
+                "newCount": 7,
+                "lines": [
+                  {
+                    "type": "add",
+                    "content": "# GitHub Signals"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "> The daily scout for open-source projects worth your stars — one repo a day, plain-English pitch, straight from Hacker News to your inbox."
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "## Pages"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "- [Home](/): Subscribe to a daily curated GitHub repo signal picked from the front page of Hacker News."
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "edt-0625cff2-8e7c-4417-a516-1720bbb3910b",
+      "type": "manual_update",
+      "commit_sha": "9ad32e18c462cc715bead5b696d9d36bfbf116d4",
+      "commit_message": "Update site info for publish",
+      "status": "completed",
+      "created_at": "2026-07-08T01:27:28Z",
+      "export": {
+        "diffs": [
+          {
+            "action": "edit",
+            "file_path": "index.html",
+            "file_type": "html",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 20,
+                "oldCount": 7,
+                "newStart": 20,
+                "newCount": 6,
+                "lines": [
+                  {
+                    "type": "context",
+                    "content": "  <meta name=\"twitter:title\" content=\"GitHub Signals — Daily open-source drops, spotted on Hacker News\">"
+                  },
+                  {
+                    "type": "context",
+                    "content": "  <meta property=\"og:description\" content=\"The scout for trending open-source GitHub projects. Daily drops, plain-English pitches, straight to your inbox.\">"
+                  },
+                  {
+                    "type": "context",
+                    "content": "  <meta name=\"twitter:description\" content=\"The scout for trending open-source GitHub projects. Daily drops, plain-English pitches, straight to your inbox.\">"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "  <link rel=\"icon\" type=\"image/x-icon\" href=\"/favicon.ico\">"
+                  },
+                  {
+                    "type": "context",
+                    "content": "</head>"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "  <body>"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "edt-7313663d-80fb-4adf-abe2-11c4b8aec88d",
+      "type": "ai_update",
+      "commit_sha": "61b7e3d62989adc6984ac9e9c3f23a6b74275a41",
+      "commit_message": "Fixed SEO findings",
+      "status": "completed",
+      "created_at": "2026-07-08T01:30:01Z",
+      "export": {
+        "diffs": [
+          {
+            "action": "edit",
+            "file_path": "index.html",
+            "file_type": "html",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 3,
+                "oldCount": 23,
+                "newStart": 3,
+                "newCount": 43,
+                "lines": [
+                  {
+                    "type": "context",
+                    "content": "  <head>"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta charset=\"UTF-8\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\" />"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <title>GitHub Signals — Daily open-source drops, spotted on Hacker News</title>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <title>GitHub Signals — Daily open-source drops</title>"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta name=\"description\" content=\"The scout for trending open-source GitHub projects. Daily drops, plain-English pitches, straight to your inbox.\">"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta name=\"google-site-verification\" content=\"u5pvagiREMdJGJ5wwPq2UDNXL4Pizuf38fjThYrP_k4\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta name=\"author\" content=\"GitHub Signals\" />"
+                  },
+                  {
+                    "type": "remove",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    "
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <link rel=\"canonical\" href=\"https://githubsignals.com/\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta property=\"og:type\" content=\"website\" />"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <meta property=\"og:image\" content=\"https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/56a70247-6360-45ba-8780-6310bca610ff/id-preview-836a66b9--cf52f827-4294-4886-831d-23e566684763.lovable.app-1777547067055.png\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta property=\"og:url\" content=\"https://githubsignals.com/\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta property=\"og:title\" content=\"GitHub Signals — Daily open-source drops\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta property=\"og:description\" content=\"One repo a day, spotted on Hacker News, delivered to your inbox in plain English.\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta property=\"og:image\" content=\"https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/56a70247-6360-45ba-8780-6310bca610ff/id-preview-836a66b9--cf52f827-4294-4886-831d-23e566684763.lovable.app-1777547067055.png\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta name=\"twitter:card\" content=\"summary_large_image\" />"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    <meta name=\"twitter:site\" content=\"@Lovable\" />"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <meta name=\"twitter:image\" content=\"https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/56a70247-6360-45ba-8780-6310bca610ff/id-preview-836a66b9--cf52f827-4294-4886-831d-23e566684763.lovable.app-1777547067055.png\">"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "  <meta property=\"og:title\" content=\"GitHub Signals — Daily open-source drops, spotted on Hacker News\">"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "  <meta name=\"twitter:title\" content=\"GitHub Signals — Daily open-source drops, spotted on Hacker News\">"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "  <meta property=\"og:description\" content=\"The scout for trending open-source GitHub projects. Daily drops, plain-English pitches, straight to your inbox.\">"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "  <meta name=\"twitter:description\" content=\"The scout for trending open-source GitHub projects. Daily drops, plain-English pitches, straight to your inbox.\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta name=\"twitter:title\" content=\"GitHub Signals — Daily open-source drops\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta name=\"twitter:description\" content=\"One repo a day, spotted on Hacker News, delivered to your inbox in plain English.\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <meta name=\"twitter:image\" content=\"https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/56a70247-6360-45ba-8780-6310bca610ff/id-preview-836a66b9--cf52f827-4294-4886-831d-23e566684763.lovable.app-1777547067055.png\" />"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <script type=\"application/ld+json\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        \"@context\": \"https://schema.org\","
+                  },
+                  {
+                    "type": "add",
+                    "content": "        \"@graph\": ["
+                  },
+                  {
+                    "type": "add",
+                    "content": "          {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            \"@type\": \"WebSite\","
+                  },
+                  {
+                    "type": "add",
+                    "content": "            \"name\": \"GitHub Signals\","
+                  },
+                  {
+                    "type": "add",
+                    "content": "            \"url\": \"https://githubsignals.com/\","
+                  },
+                  {
+                    "type": "add",
+                    "content": "            \"description\": \"The daily scout for trending open-source GitHub projects, spotted on Hacker News.\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "          },"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "            \"@type\": \"Organization\","
+                  },
+                  {
+                    "type": "add",
+                    "content": "            \"name\": \"GitHub Signals\","
+                  },
+                  {
+                    "type": "add",
+                    "content": "            \"url\": \"https://githubsignals.com/\","
+                  },
+                  {
+                    "type": "add",
+                    "content": "            \"sameAs\": [\"https://www.instagram.com/githubsignals\"]"
+                  },
+                  {
+                    "type": "add",
+                    "content": "          }"
+                  },
+                  {
+                    "type": "add",
+                    "content": "        ]"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      }"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    </script>"
+                  },
+                  {
+                    "type": "context",
+                    "content": "</head>"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "  <body>"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "action": "edit",
+            "file_path": "src/pages/Index.tsx",
+            "file_type": "tsx",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 81,
+                "oldCount": 6,
+                "newStart": 81,
+                "newCount": 7,
+                "lines": [
+                  {
+                    "type": "context",
+                    "content": "              value={email}"
+                  },
+                  {
+                    "type": "context",
+                    "content": "              onChange={(e) => setEmail(e.target.value)}"
+                  },
+                  {
+                    "type": "context",
+                    "content": "              placeholder=\"you@dev.inbox\""
+                  },
+                  {
+                    "type": "add",
+                    "content": "              aria-label=\"Email address\""
+                  },
+                  {
+                    "type": "context",
+                    "content": "              className=\"h-12 border-border bg-card/80 pl-10 text-base backdrop-blur focus-visible:ring-primary\""
+                  },
+                  {
+                    "type": "context",
+                    "content": "            />"
+                  },
+                  {
+                    "type": "context",
+                    "content": "          </div>"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "action": "edit",
+            "file_path": "src/pages/NotFound.tsx",
+            "file_type": "tsx",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 1,
+                "oldCount": 15,
+                "newStart": 1,
+                "newCount": 52,
+                "lines": [
+                  {
+                    "type": "context",
+                    "content": "import { useLocation } from \"react-router-dom\";"
+                  },
+                  {
+                    "type": "context",
+                    "content": "import { useEffect } from \"react\";"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "const setMeta = (selector: string, attr: string, value: string) => {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  let el = document.head.querySelector<HTMLMetaElement | HTMLLinkElement>(selector);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  if (!el) {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    if (selector.startsWith(\"link\")) {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      el = document.createElement(\"link\");"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      (el as HTMLLinkElement).rel = \"canonical\";"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    } else {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      el = document.createElement(\"meta\");"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      const m = selector.match(/\\[(name|property)=\"([^\"]+)\"\\]/);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      if (m) (el as HTMLMetaElement).setAttribute(m[1], m[2]);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    }"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    document.head.appendChild(el);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  }"
+                  },
+                  {
+                    "type": "add",
+                    "content": "  el.setAttribute(attr, value);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "};"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "const NotFound = () => {"
+                  },
+                  {
+                    "type": "context",
+                    "content": "  const location = useLocation();"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "  useEffect(() => {"
+                  },
+                  {
+                    "type": "context",
+                    "content": "    console.error(\"404 Error: User attempted to access non-existent route:\", location.pathname);"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "    const prevTitle = document.title;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    const title = \"Page not found — GitHub Signals\";"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    const description = \"The page you're looking for doesn't exist. Head back to GitHub Signals for the daily open-source drop.\";"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    const url = `https://githubsignals.com${location.pathname}`;"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "    document.title = title;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    setMeta('meta[name=\"description\"]', \"content\", description);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    setMeta('link[rel=\"canonical\"]', \"href\", url);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    setMeta('meta[property=\"og:title\"]', \"content\", title);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    setMeta('meta[property=\"og:description\"]', \"content\", description);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    setMeta('meta[property=\"og:url\"]', \"content\", url);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    setMeta('meta[name=\"twitter:title\"]', \"content\", title);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    setMeta('meta[name=\"twitter:description\"]', \"content\", description);"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    setMeta('meta[name=\"robots\"]', \"content\", \"noindex\");"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "    return () => {"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      document.title = prevTitle;"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      const robots = document.head.querySelector('meta[name=\"robots\"]');"
+                  },
+                  {
+                    "type": "add",
+                    "content": "      if (robots) robots.remove();"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    };"
+                  },
+                  {
+                    "type": "context",
+                    "content": "  }, [location.pathname]);"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "context",
+                    "content": "  return ("
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    <div className=\"flex min-h-screen items-center justify-center bg-muted\">"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    <main className=\"flex min-h-screen items-center justify-center bg-muted\">"
+                  },
+                  {
+                    "type": "context",
+                    "content": "      <div className=\"text-center\">"
+                  },
+                  {
+                    "type": "context",
+                    "content": "        <h1 className=\"mb-4 text-4xl font-bold\">404</h1>"
+                  },
+                  {
+                    "type": "context",
+                    "content": "        <p className=\"mb-4 text-xl text-muted-foreground\">Oops! Page not found</p>"
+                  }
+                ]
+              },
+              {
+                "oldStart": 17,
+                "oldCount": 7,
+                "newStart": 54,
+                "newCount": 7,
+                "lines": [
+                  {
+                    "type": "context",
+                    "content": "          Return to Home"
+                  },
+                  {
+                    "type": "context",
+                    "content": "        </a>"
+                  },
+                  {
+                    "type": "context",
+                    "content": "      </div>"
+                  },
+                  {
+                    "type": "remove",
+                    "content": "    </div>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "    </main>"
+                  },
+                  {
+                    "type": "context",
+                    "content": "  );"
+                  },
+                  {
+                    "type": "context",
+                    "content": "};"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "edt-d7522054-b6d8-4c9b-b5cf-d552339a0c95",
+      "type": "developer_update",
+      "commit_sha": "2be926445a491ccc67ff587d782316cc87ec0716",
+      "commit_message": "Add project README",
+      "status": "completed",
+      "created_at": "2026-09-25T22:25:13Z",
+      "export": {
+        "diffs": [
+          {
+            "action": "edit",
+            "file_path": "README.md",
+            "file_type": "md",
+            "is_image": false,
+            "hunks": [
+              {
+                "oldStart": 1,
+                "oldCount": 3,
+                "newStart": 1,
+                "newCount": 26,
+                "lines": [
+                  {
+                    "type": "remove",
+                    "content": "# Welcome to your Lovable project"
+                  },
+                  {
+                    "type": "add",
+                    "content": "# GitHub Signals Hub"
+                  },
+                  {
+                    "type": "context",
+                    "content": ""
+                  },
+                  {
+                    "type": "remove",
+                    "content": "TODO: Document your project here"
+                  },
+                  {
+                    "type": "add",
+                    "content": "Initialize project, name GitHub Signals, nothing else."
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "This project was built with [Lovable](https://lovable.dev)."
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "**Live app**: https://signal-spark-show.lovable.app"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "## Build with Lovable"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "Continue developing this project in the [Lovable editor](https://lovable.dev/projects/cf52f827-4294-4886-831d-23e566684763)."
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "- **Ship faster**: describe what you want to build and Lovable handles the code."
+                  },
+                  {
+                    "type": "add",
+                    "content": "- **Stay in sync**: every change made in Lovable is committed straight to this repository."
+                  },
+                  {
+                    "type": "add",
+                    "content": "- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt."
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "## Development"
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)."
+                  },
+                  {
+                    "type": "add",
+                    "content": ""
+                  },
+                  {
+                    "type": "add",
+                    "content": "```sh"
+                  },
+                  {
+                    "type": "add",
+                    "content": "git clone <this-repository-url>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "cd <repository-name>"
+                  },
+                  {
+                    "type": "add",
+                    "content": "npm i"
+                  },
+                  {
+                    "type": "add",
+                    "content": "npm run dev"
+                  },
+                  {
+                    "type": "add",
+                    "content": "```"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

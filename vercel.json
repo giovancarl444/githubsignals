@@ -1,0 +1,17 @@
+{
+  "crons": [
+    {
+      "path": "/api/jobs",
+      "schedule": "* * * * *"
+    },
+    {
+      "path": "/api/maintenance",
+      "schedule": "17 4 * * *"
+    }
+  ],
+  "functions": {
+    "src/app/api/jobs/route.ts": {
+      "maxDuration": 60
+    }
+  }
+}
