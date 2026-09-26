@@ -54,6 +54,9 @@ export function AdminLogin() {
       <p className="fine-print">
         Access is by invitation. There is no public account registration.
       </p>
+      <p className="fine-print">
+        Need access or a password reset? Ask the site owner for a new secure link.
+      </p>
     </form>
   );
 }

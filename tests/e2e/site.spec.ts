@@ -33,6 +33,7 @@ test('serves real pages, metadata, and preview robots without fictional offers',
     '/privacy',
     '/disclosure',
     '/admin',
+    '/admin/activate',
     '/subscribe/confirm',
     '/unsubscribe',
   ]) {
@@ -49,6 +50,28 @@ test('serves real pages, metadata, and preview robots without fictional offers',
   expect(await (await request.get('/robots.txt')).text()).toMatch(/^Disallow: \/$/m);
   await page.goto('/tools');
   await expect(page.locator('a[href^="/go/"]')).toHaveCount(0);
+});
+test('keeps invitation tokens out of requests and waits for an explicit password submission', async ({
+  page,
+}) => {
+  const posts: string[] = [];
+  page.on('request', (request) => {
+    if (request.url().includes('/api/admin/activate')) posts.push(request.method());
+  });
+  await page.goto(
+    '/admin/activate#token_hash=' + 'a'.repeat(64) + '&type=invite&next=https://attacker.example',
+  );
+  await expect(page.getByRole('button', { name: 'Save password' })).toBeVisible();
+  expect(new URL(page.url()).hash).toBe('');
+  expect(posts).toEqual([]);
+  await page.getByLabel('New password', { exact: true }).fill('a new unique password');
+  await page
+    .getByLabel('Confirm new password', { exact: true })
+    .fill('a different unique password');
+  await page.getByRole('button', { name: 'Save password' }).click();
+  await expect(page.locator('p[role="alert"]')).toHaveText('The passwords do not match.');
+  expect(posts).toEqual([]);
+  await expect(page).toHaveURL(/\/admin\/activate$/);
 });
 test('does not pretend to collect email before services are connected', async ({
   page,

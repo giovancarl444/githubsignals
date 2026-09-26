@@ -25,6 +25,7 @@ The budget in the accepted plan is an estimate, not a purchase or committed prov
    insert into public.admin_users(user_id) values ('REPLACE_WITH_AUTH_USER_UUID');
    ```
    Membership is checked server-side on every administrative read/write/export. The browser never gets the secret key.
+   Configure the invitation/reset email templates and test the password setup flow described in [admin access](admin-access.md). Auth SMTP is separate from the newsletter provider flags.
 4. Run `npm run db:migrate` against each correct database using a private `.env.local`, a direct/session connection (not transaction pooling) and the provider's CA if needed. The seeded editorial records are verified existing Instagram discoveries; no commercial inventory is fabricated.
 5. Configure Resend and the mailbox as described in [domain-and-mail.md](domain-and-mail.md). Set the newsletter segment ID, sender, reply-to, organization name, postal address and privacy contact. Register `/api/webhooks/resend` with a provider signing secret. Enable `email.bounced`, `email.complained`, `email.suppressed`, `suppression.added` and `contact.updated` events. Resend-native unsubscribe events must reach this endpoint.
 6. Generate separate random values (at least 32 bytes) for `TOKEN_SECRET`, `RATE_LIMIT_SECRET` and `CRON_SECRET`. Example local generation: `openssl rand -hex 32`. Store them directly in provider secret stores. Keep the unsubscribe-token key stable; rotation invalidates outstanding custom unsubscribe links.
